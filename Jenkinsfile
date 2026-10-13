@@ -7,7 +7,7 @@ pipeline {
     }
 
     environment {
-        APP_NAME = 'new-app-nti'
+        APP_NAME = 'kapp'
         REPO_URL = 'https://github.com/ShimaaOmar5/JenWithKube.git'
         GIT_BRANCH = 'main'
         K8S_DIR = 'K8s'
@@ -35,7 +35,7 @@ pipeline {
                 sh '''
                     set -eu
 
-                    test -f Python.py
+                    test -f kapp.py
                     test -f req.txt
                     test -f Dockerfile
                     test -f "$K8S_DIR/deployment.yaml"
