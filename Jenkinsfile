@@ -9,7 +9,7 @@ pipeline {
     environment {
         APP_NAME = 'new-app-nti'
         REPO_URL = 'https://github.com/ShimaaOmar5/JenWithKube.git'
-        GIT_BRANCH = 'main-k8s'
+        GIT_BRANCH = 'main'
         K8S_DIR = 'K8s'
     }
 
